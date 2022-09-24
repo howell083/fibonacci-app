@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('../partials/head'); %> 
+</head>
+<body class="container">
+<header>
+    <%- include('../partials/header'); %> 
+</header>
+
+<main>
+<div class="row">
+    <div class="col-sm-8">
+        <div class="jumbotron">
+            <h1>Tell Fibs</h1>
+            <p>Welcome to Tell Fibs. Enter a number below to calculate that many digits of the Fibonacci Sequence.</p>
+            <%- include('../partials/fibform'); %>
+        </div>
+    </div>
+    
+    <div class="col-sm-4">
+        <div class="well">
+            <h3>Results will be here.</h3>
+            <p style="overflow-wrap: break-word;"><%= fibs %></p>
+        </div>
+    </div>
+</div>
+
+
+</main>
+<footer>
+    <%- include('../partials/footer'); %> 
+</footer>
+
+</body>
+
+</html>
